@@ -4,6 +4,11 @@ This template extends [Pandoc]'s original LaTeX-template by parsing variables an
 
 ## Changelog
 
+- 2016-02-10: 
+  * Add a Makefile.
+  * Set engine to xelatex to be able to use system font names.
+  * Remove use of lco file to keep everything self-contained in a single Markdown file.
+  * Rename stuff to `letter.*`
 - **2015-12-30**: To and from address fields are now standard multiline markdown fields instead of lists, which is easier to read and handle and potentially available for all variables.
 
 ## Requirements, Installation and Usage
@@ -18,7 +23,7 @@ To install the template `scrlttr2.latex`, either store it in the working directo
 
 To typeset a letter, run Pandoc with a `--template scrlttr2` parameter, and either using the PDF or LaTeX writer. For creating a printable PDF file, run
 
-    pandoc --template scrlttr2 -o example-letter.pdf example-letter.md
+    pandoc --template scrlttr2 --template-engine=xelatex -o example-letter.pdf example-letter.md
 
 ### Using the Wrapper Script
 
