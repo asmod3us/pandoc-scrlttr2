@@ -35,5 +35,6 @@ if files.output is None:
 os.execvp('pandoc', [
                       'pandoc',
                       '--template=scrlttr2',
+                      '--latex-engine=xelatex',
                       '-o', files.output
                     ] + options + files.input)
