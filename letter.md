@@ -19,7 +19,7 @@ city: Home Town
 letteroption:
 - DIN        # typeset following DIN norm
 mainfont: Avenir Next
-lang: german
+lang: de
 fontsize: 10pt
 paper: a4
 ---

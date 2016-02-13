@@ -4,7 +4,8 @@ This template extends [Pandoc]'s original LaTeX-template by parsing variables an
 
 ## Changelog
 
-- 2016-02-10: 
+- **2016-02-11**: Merged changes to Pandoc's `default.latex` template to fetch up with changes in Pandoc. Use [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language codes instead of the old bable names now, for example `en` or `en-US` instead of `english`, `de-DE` instead of `ngerman`.
+- **2016-02-10**: 
   * Add a Makefile.
   * Set engine to xelatex to be able to use system font names.
   * Remove use of lco file to keep everything self-contained in a single Markdown file.
